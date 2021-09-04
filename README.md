@@ -1,4 +1,4 @@
-# water_quality_test_report_ocr_postprocessing
+# 수질검사 성적서 OCR 후처리
 ![image](https://user-images.githubusercontent.com/85105917/132102926-049f8488-350c-48d9-ac69-4f4a630d089c.png)
 ### 1. 담당 업무
 1. 해밍거리를 이용한 오타 수정 알고리즘 작성

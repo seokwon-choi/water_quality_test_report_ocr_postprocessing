@@ -1,7 +1,7 @@
 # 수질검사 성적서 OCR 후처리
 ![image](https://user-images.githubusercontent.com/85105917/132102926-049f8488-350c-48d9-ac69-4f4a630d089c.png)
 ### 1. 담당 업무
-1. 해밍거리를 이용한 오타 수정 알고리즘 작성
+1. Hamming거리를 이용한 오타 수정 알고리즘 작성
 2. 적합/부적합 판정 부분 파싱 및 판정에 따른 팝업 아이콘 색 변경
 3. 지하수 오염원 데이터 수집 및 지하수 유동 데이터 수집
 4. 부적합 지역 반경 설정 후 해당 반경 안에 있는 지하수 오염원 반경과 함께 표시
@@ -114,4 +114,27 @@
 3. 지하수를 분석할 때 채수장소가 자동으로 인식 후 지도에 표시되고 한개의 지도만으로 분석할 수 있기 때문에 분석이 빠르고 편리하다.
 4. 설정 반경안의 잠재오염원만 볼 수 있고 업체명도 볼 수 있어서 분석이 편리하다. 
 
+### 5. 데이터 및 참고자료 출처
+1. 오염원 데이터
+    - 기타 수질오염원 설치시설 : (https://www.data.go.kr/data/15045116/fileData.do)
+    - 폐기물 업체 : (https://www.data.go.kr/data/3070167/fileData.do)
+    - 골프장 : (https://www.data.go.kr/data/15045080/fileData.do)
+    - 공장 : (https://www.data.go.kr/data/3041646/fileData.do)
+    - 공공하수처리시설 : (https://www.data.go.kr/data/3073222/fileData.do)
+    - 도축장 : (https://www.data.go.kr/data/15030239/fileData.do)
+    - 지정폐기물 배출 사업장 : (https://www.data.go.kr/data/15068827/fileData.do)
+    - 지하수 정화 업체 : (https://www.data.go.kr/data/15045117/fileData.do)
+    - 주유소 : (https://www.data.go.kr/dataset/3076606/fileData.do)
+    
+2. 전국 주소 데이터 : (https://www.juso.go.kr/addrlink/addressBuildDevNew.do?menu=match)
+3. 지하수 유동방향 지도 : (http://www.gims.go.kr/apiIntro.do)
 
+### 6. 프로젝트를 진행하면서 어려웠던 점
+1. 종이 문서로된 수질검사성적서의 스캔본의 상태에 따라 OCR결과의 차이가 심하여 파싱이 잘 되지 않았음
+2. 단어 수정의 경우 Hamming거리의 개념만 가지고 알고리즘을 구현해야되어서 중간에 오류가 많았음
+3. 코드의 수행시간이 오래 걸려 모든 반복문을 numpy로 바꾸는 최적화를 진행하는 과정에서 오류가 많이 발생함 
+
+### 7. 느낀 점
+1. 인턴으로 프로젝트를 진행하여 기업의 프로젝트 관리에 대해 배울 수 있었음
+2. 오픈 소스 활용과 빅데이터 수집의 중요성을 배움
+3. 수집한 빅데이터를 시각화하면 분석 시 인사이트 도출에 도움이 된다는 것을 느낌

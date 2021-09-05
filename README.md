@@ -1,5 +1,5 @@
 # 수질검사 성적서 OCR 후처리
-![image](https://user-images.githubusercontent.com/85105917/132102926-049f8488-350c-48d9-ac69-4f4a630d089c.png)
+![image](https://user-images.githubusercontent.com/85105917/132113487-867e3f22-1c60-454b-b070-a137d9fe2e03.png)
 ### 1. 담당 업무
 1. Hamming거리를 이용한 오타 수정 알고리즘 작성
 2. 적합/부적합 판정 부분 파싱 및 판정에 따른 팝업 아이콘 색 변경
